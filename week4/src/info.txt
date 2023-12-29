@@ -1,0 +1,1 @@
+ADD jcalender & mysql jconnector in the project package library
