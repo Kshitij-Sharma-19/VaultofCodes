@@ -1,4 +1,3 @@
-// Exercise 5:
 import java.util.*;
 
 public class PrimeNumbers {
@@ -8,16 +7,17 @@ public class PrimeNumbers {
             boolean isPrime = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
                 if (i % j == 0) {
-                isPrime = false;
-                break;
+                    isPrime = false;
+                    break;
                 }
             }
             if (isPrime) {
-            primes.add(i);
-            }       
+                primes.add(i);
+            }
         }
         return primes;
     }
+
     public static void main(String[] args) {
         int n = 20;
         List<Integer> primeNumbers = findPrimes(n);
