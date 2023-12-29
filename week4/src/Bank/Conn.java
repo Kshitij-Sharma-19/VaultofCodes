@@ -8,7 +8,7 @@ public class Conn{
     public Conn(){  
         try{  
             Class.forName("com.mysql.jdbc.Driver");  
-            c =DriverManager.getConnection("jdbc:mysql:///bms","root","admin");    
+            c =DriverManager.getConnection("jdbc:mysql:///bms","root","pasword"); //add mysql password if null then pass ""   
             s =c.createStatement(); 
            
           
